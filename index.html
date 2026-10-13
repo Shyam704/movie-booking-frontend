@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineBook</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        🎬 CineBook
+    </div>
+
+    <ul>
+        <li>Home</li>
+        <li>Movies</li>
+        <li>Bookings</li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Book Movie Tickets Online</h1>
+        <p>Experience Blockbuster Movies in Premium Theatres</p>
+        <button>Book Now</button>
+    </div>
+
+</section>
+
+<h2 class="section-title">Now Showing</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <img src="https://picsum.photos/300/450?1">
+        <div class="details">
+            <h3>LEO</h3>
+            <p>₹200</p>
+            <button onclick="selectMovie('LEO')">
+                Book Ticket
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/450?2">
+        <div class="details">
+            <h3>GOAT</h3>
+            <p>₹250</p>
+            <button onclick="selectMovie('GOAT')">
+                Book Ticket
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/450?3">
+        <div class="details">
+            <h3>JAILER</h3>
+            <p>₹180</p>
+            <button onclick="selectMovie('JAILER')">
+                Book Ticket
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="booking">
+
+    <h2>Book Tickets</h2>
+
+    <input
+        type="text"
+        id="movieName"
+        readonly
+        placeholder="Selected Movie">
+
+    <input
+        type="number"
+        id="seatCount"
+        placeholder="Seats">
+
+    <button onclick="bookMovie()">
+        Confirm Booking
+    </button>
+
+    <div id="message"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
